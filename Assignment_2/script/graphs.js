@@ -98,7 +98,7 @@ function init() {
     var path = svg.append("path")
       .datum(dataset)
       .attr("fill", "none")
-      .attr("stroke", "steelblue")
+      .attr("stroke", "lightpink")
       .attr("stroke-width", 1.5)
       .attr("d", d3.line()
         .x(function (d) { return xScale(d.year); })
@@ -136,7 +136,7 @@ function init() {
       .attr("cx", function (d) { return xScale(d.year); })
       .attr("cy", function (d) { return yScale(d[state]); })
       .attr("r", 4)
-      .attr("fill", "steelblue")
+      .attr("fill", "pink")
       .attr("cursor", "pointer")
       .on("mouseover", function (d) {
         var arrival = d3.select(this).datum()[state];
