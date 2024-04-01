@@ -5,7 +5,7 @@ function init() {
   var australiaY = 133.682542;
 
   var colour = d3.scaleQuantize()
-    .range(['#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5', '#084594'])
+    .range([ '#223f21', '#08542f', '#407138', '#689758'])
 
   var projection = d3.geoMercator()
     .center([127, -28])
@@ -19,7 +19,7 @@ function init() {
     .append("svg")
     .attr("width", w)
     .attr("height", h)
-    .attr("fill", "grey");
+    .attr("fill", "lightgreen");
 
   function buildHeatMap() {
     return (
@@ -32,7 +32,7 @@ function init() {
           .style("cursor", "pointer")
           .on("mouseover", function () {
             d3.select(this)
-              .style("fill", "rgb(3, 51, 75)");
+              .style("fill", "green");
 
             // Define the 'd' variable
             var d = d3.select(this).data()[0];
@@ -50,7 +50,7 @@ function init() {
           })
           .on("mouseout", function () {
             d3.select(this)
-              .style("fill", "grey");
+              .style("fill", "lightgreen");
 
             // Remove the label
             svg.select(".label").remove();
@@ -193,7 +193,7 @@ function init() {
                       .attr("y1", newProjection(source)[1])
                       .attr("x2", newProjection(target)[0])
                       .attr("y2", newProjection(target)[1])
-                      .style("stroke", "#FF8000")
+                      .style("stroke", "red")
                       .style("stroke-width", 1);
                   }
 
