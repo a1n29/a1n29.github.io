@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="scripts/lineChart1.js"></script>
+    <script defer src="scripts/style.js"></script>
+    <title>Departure</title>
+</head>
+
+<body>
+    <div class="container">
+        <button id="lineChartButton" type="button" onclick="window.location.href='index.html'">Back</button>
+        <p id="heatMapP"><b>The number of people depart from each state in Australia</b></p>
+        <button id="lineChartButton" type="button" onclick="window.location.href='lineChart1.html'">Next</button>
+    </div>
+    <div class="stateButton">
+        <button class="chosenStateButton" id="chosenNSW">New South Wales</button>
+        <button class="chosenStateButton" id="chosenVIC">Victoria</button>
+        <button class="chosenStateButton" id="chosenQLD">Queensland</button>
+        <button class="chosenStateButton" id="chosenWA">Western Australia</button>
+        <button class="chosenStateButton" id="chosenSA">South Australia</button>
+        <button class="chosenStateButton" id="chosenTAS">Tasmania</button>
+        <button class="chosenStateButton" id="chosenACT">Australian Capital Territory</button>
+        <button class="chosenStateButton" id="chosenNT">Northern Territory</button>
+    </div>
+    <div class="lineChart2"></div>
+    <footer id="lineChartFooter">
+        <div class="footerP">
+            <p>Copyright: Tran Hoang Hai Anh & Nghiem Tuan Linh</p>
+        </div>
+    </footer>
+</body>
+
+</html>
