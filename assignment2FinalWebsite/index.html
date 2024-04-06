@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="scripts/heatMap.js"></script>
+    <script defer src="scripts/style.js"></script>
+    <title>Homepage</title>
+</head>
+
+<body>
+    <div class="indexDecoration">
+        <div class="welcome">
+            <h1>The pattern of migration based on states in Australia</h1>
+        </div>
+        <div class="birds">
+            <img id="bird0" onclick="deleteBird('bird0')" src="images/bird.png">
+            <img id="bird1" onclick="deleteBird('bird1')" src="images/bird.png">
+            <img id="bird2" onclick="deleteBird('bird2')" src="images/bird.png">
+            <img id="bird3" onclick="deleteBird('bird3')" src="images/bird.png">
+            <img id="bird4" onclick="deleteBird('bird4')" src="images/bird.png">
+            <img id="bird5" onclick="deleteBird('bird5')" src="images/bird.png">
+            <img id="bird6" onclick="deleteBird('bird6')" src="images/bird.png">
+        </div>
+    </div>
+    <div class="numberCounter">
+        <div class="counter">
+            <h1 class="count" end-number="310050">0</h1>
+            <p>Philippines Migrants in Australia</p>
+        </div>
+        <div class="counter">
+            <h1 class="count" end-number="270340">0</h1>
+            <p>Vietnamese Migrants in Australia</p>
+        </div>
+        <div class="counter">
+            <h1 class="count" end-number="177460">0</h1>
+            <p>Malaysian Migrants in Australia</p>
+        </div>
+    </div>
+    <div class="content">
+        <p class="text">"Migration is the term used to describe the movement of people, usually with the intention of
+            settling in a new area.<br>
+            It can happen for a number of reasons, such as personal preferences, societal dynamics, political
+            unpredictability, economic opportunity, or environmental circumstances.<br>
+            Migration can occur both internationally, across borders, and internally, within a nation. <br>
+            Our aim is to provide some visualisations of the migration happened in Australia."</p>
+    </div>
+    <div class="container">
+        <button id="previousButton" type="button">Back</button>
+        <p id="heatMapP">Click on each state to understand more about the origins of immigrants based on the contrast of color.</p>
+        <button id="proceedButton" type="button" onclick="window.location.href='lineChart0.html'">Next</button>
+    </div>
+    <div class="heatMapDiv">
+        <p id="heatMap"></p>
+    </div>
+    <footer>
+        <div class="footerP">
+            <p>Copyright: Tran Hoang Hai Anh & Nghiem Tuan Linh</p>
+        </div>
+    </footer>
+</body>
+
+</html>

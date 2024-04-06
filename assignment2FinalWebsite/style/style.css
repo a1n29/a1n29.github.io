@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+
+p {
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: green;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.navigationBar {
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.indexDecoration {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome {
+    color: #fbfcfd;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.menu {
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+
+.birds {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+
+}
+
+.birds img {
+    width: 50px;
+    animation: bird 7s linear infinite;
+}
+
+@keyframes bird {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.birds img:nth-child(1) {
+    animation-delay: 2s;
+    width: 20px;
+}
+
+.birds img:nth-child(2) {
+    animation-delay: 1s;
+    width: 15px;
+}
+
+.birds img:nth-child(3) {
+    animation-delay: 3s;
+    width: 25px;
+}
+
+.birds img:nth-child(4) {
+    animation-delay: 4s;
+}
+
+.birds img:nth-child(5) {
+    animation-delay: 5s;
+    width: 25px;
+}
+
+.birds img:nth-child(6) {
+    animation-delay: 8s;
+}
+
+.birds img:nth-child(7) {
+    animation-delay: 2s;
+    width: 35px;
+}
+
+.text {
+    font-size: 20px;
+    color: green;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    animation: typing 5s,
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+.container {
+    display: flex;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.container p {
+    color: black;
+}
+
+.heatMapDiv svg {
+    scale: 1;
+}
+
+.heatMapDiv {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.numberCounter {
+    background: lightblue;
+    text-align: center;
+    transition: all 0.7s linear;
+    color: whitesmoke;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 2rem;
+    display: grid;
+    position: relative;
+}
+
+.counter .count {
+    font-size: 2.5rem;
+    margin-bottom: 0rem;
+}
+
+#heatMapP {
+    color: green;
+    text-align: center;
+    font-size: 25px;
+}
+
+#previousButton {
+    width: 200px;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: green;
+    font-weight: 400;
+    border: 2px solid green;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+
+#previousButton:hover {
+    box-shadow: 0 5px 50px 0 lightgreen, 0 5px 50px 0 lightgreen;
+}
+
+#proceedButton {
+    width: 200px;
+    padding: 10px;
+    font-size: 15px;
+    color: green;
+    font-weight: 400;
+    border: 2px solid green;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+
+#proceedButton:hover {
+    box-shadow: 0 5px 50px 0 lightgreen, 0 5px 50px 0 lightgreen;
+}
+
+#lineChartButton {
+    width: 200px;
+    padding: 10px;
+    font-size: 15px;
+    color: green;
+    font-weight: 400;
+    border: 2px solid green;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+
+#lineChartButton:hover {
+    box-shadow: 0 5px 50px 0 lightgreen, 0 5px 50px 0 lightgreen;
+}
+
+.footerP {
+    background: lightblue;
+    padding: 10px;
+    text-align: center;
+}
+
+.footerP p {
+    text-align: center;
+    font-size: 16px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: green;
+}
+
+.lineChart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lineChart2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lineChartFooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+}
+
+button {
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    font-size: 10px;
+    color: green;
+    font-weight: 500;
+    border: 3px solid blue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+button:hover {
+    box-shadow: 0 5px 50px 0 lightgreen, 0 5px 50px 0 lightgreen;
+}
+
+.stateButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chosenStateButton {
+    background-color: lightblue;
+    color: white;
+}
+
+.beating {
+    animation: beating 1.5s infinite ease-out;
+}
+
+@keyframes beating {
+    0% {
+        box-shadow: 0 0 0 0 red;
+    }
+
+    25% {
+        box-shadow: 0 0 0 0.5px red;
+    }
+
+    50% {
+        box-shadow: 0 0 0 1px red;
+    }
+
+    75% {
+        box-shadow: 0 0 0 1.5px red;
+    }
+
+    100% {
+        box-shadow: 0 0 0 2px red;
+    }
+}
