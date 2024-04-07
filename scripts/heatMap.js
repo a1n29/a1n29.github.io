@@ -119,7 +119,7 @@ function init() {
                     }
                   }
                 }
-                d3.csv("data/capital.csv", function (centre) {
+                d3.csv("data/countryLatLon.csv", function (centre) {
                   return {
                     country: centre.Country,
                     lon: +centre.Lon,
