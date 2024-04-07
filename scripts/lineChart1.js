@@ -59,7 +59,7 @@ function init() {
       .domain(d3.extent(dataset, function (d) { return d.year; }))
       .range([padding, w - padding]);
     var yScale = d3.scaleLinear()
-      .domain([0, 200000])
+      .domain([0, 400000])
       .range([h - padding, padding]);
     // Define axes
     var xAxis = d3.axisBottom(xScale)
